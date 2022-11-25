@@ -1,0 +1,142 @@
+.container {
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+}
+
+.wrapper {
+  height: 100vh;
+  width: 120vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 1000px;
+}
+
+.item {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 25px 26px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0.1em solid gray;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+span {
+  justify-content: flex-end;
+}
+
+h2 {
+  margin-left: 20px;
+  font-family:Verdana,sans-serif;
+  line-height: 1.5;
+}
+
+.content {
+  color: #8b7f75;
+  font-family:Verdana,sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+  display: none;
+}
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: auto;
+  font-family:Verdana,sans-serif;
+}
+
+textarea {
+  height: 100px;
+  width: 95%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* height: auto; */
+  font-family:Verdana,sans-serif;
+}
+
+
+
+.subItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+  padding: 5px;
+  font-family:Verdana,sans-serif;
+}
+
+.labelHeading {
+  color:grey;
+}
+
+.avatar {
+	width: 80px;
+	height: 80px;
+  border-radius: 40px; /* половина ширины и высоты */
+  margin: 10px;
+  border: 0.1em solid gray;
+}
+
+
+.view-edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.cancel-icon {
+  color: red;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: blue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.save-icon {
+  color: green;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.error-msg {
+  color: red;
+  font-size: 13px;
+}
+
+.saveButton {
+  background-color: white;
+    color: green;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
